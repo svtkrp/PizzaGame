@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>PizzaHeart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <nav>
+            <ul class="nav">
+                <li><a href="#levels">Список уровней</a></li>
+                <li><button type=button disabled onclick="showInfoAlert()" id="score">Информация</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bg_white">
+        <div class="wrapper">
+            <div class="header-top">
+                <div class="logo">
+                    <span class="logo-image"></span><span><a href="index.html">PizzaGame</a></span>
+                </div>
+                <div class="cart">
+                    <img id="daynight" src="img/day.png" alt="daynight" onclick="dayNight()">
+                    <a class="btn" href="./theend.html">Закончить игру</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper">
+            <div class="header-bottom">
+                <h2 class="level">Интро</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <p class="about">Новый год уже близко...</p>
+            <p class="about">На наших кухнях готовятся сотни пицц для праздничных столов...</p>
+            <p class="about">Но вдруг случилось страшное! Коварный Гринч решил испортить всем праздник и перемешал все ингредиенты для пицц!</p>
+            <img id="start_pic" src="img/level0.png" alt="illustration">
+            <p class="about">Только ты можешь спасти Новый год!!! Кстати, как тебя зовут?</p>
+            <input type="text" id="name" class="btn" placeholder="Например, Ваня...">
+            <button type=button class="btn" onclick="setName()">Это я!</button>
+            <h3 id="answer" style="display: none"></h3>
+            <a id="letsgo" style="display: none" class="btn" href="./level1.html">Можем отправляться!</a>
+        </div>
+    </div>
+</section>
+
+<section id="levels" class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3>Твой список дел</h3>
+            <p class="extra"><a href="index.html">Вступление</a></p>
+            <p class="extra"><a href="level1.html">1) Поймай меня, если осмелишься</a></p>
+            <p class="extra"><a href="level2.html">2) Колбаса любит счет</a></p>
+            <p class="extra"><a href="level3.html">3) 33 пиццетты</a></p>
+        </div>
+    </div>
+</section>
+
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/level0.js" type="text/javascript"></script>
+
+</body>
+
+</html>

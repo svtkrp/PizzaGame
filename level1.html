@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>PizzaHeart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/level1.css">
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <nav>
+            <ul class="nav">
+                <li><a href="#levels">Список уровней</a></li>
+                <li><button type=button onclick="showInfoAlert()" id="score">Информация</button></li>
+                <li><a href="#instruction">Инструкция</a></li>
+                <li><span id="score_count"></span></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bg_white">
+        <div class="wrapper">
+            <div class="header-top">
+                <div class="logo">
+                    <span class="logo-image"></span><span><a href="level1.html">PizzaGame</a></span>
+                </div>
+                <div class="cart">
+                    <img id="daynight" src="img/day.png" alt="daynight" onclick="dayNight()">
+                    <a class="btn" href="./theend.html">Закончить игру</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper">
+            <div class="header-bottom">
+                <h2 class="level">1) Поймай меня, если осмелишься</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section">
+    <div class="wrapper">
+        <div class="bg_white" id="big_field">
+
+            <div id="first_field">
+                <p id="about" class="about">О ужас! До отгрузки пицц оленям всего 3 минуты... Нам срочно нужны сыр, грибы и колбаса. Найди их как можно быстрей!</p>
+                <img id="start_pic" src="img/level1_1.png" alt="illustration">
+                <button id="start_button" type=button class="btn" onclick="start_level()">Начать</button>
+
+                <h3 id="what" style="display: none"></h3>
+                <p class="about" id="result" style="display: none"></p>
+                <img id="result_pic" src="img/level1_2.png" alt="illustration" style="display: none">
+                <p id="timer" style="display: none"></p>
+                <a id="new_level" style="display: none" class="btn" href="./level2.html">Дальше!</a>
+            </div>
+
+            <div id="field" style="display: none"></div>
+        </div>
+    </div>
+</section>
+
+<section id="levels" class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3>Твой список дел</h3>
+            <p class="extra"><a href="index.html"><strike>Вступление</strike></a></p>
+            <p class="extra"><a href="level1.html">1) Поймай меня, если осмелишься</a></p>
+            <p class="extra"><a href="level2.html">2) Колбаса любит счет</a></p>
+            <p class="extra"><a href="level3.html">3) 33 пиццетты</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="instruction" class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3>Инструкция</h3>
+            <p class="extra">Кликай на требуемые ингредиенты, пока не соберешь все!</p>
+            <p class="extra legend"><img src="img/sausage.png" alt="" /><span> - колбаса,</span></p>
+            <p class="extra legend"><img src="img/cheese.png" alt="" /><span> - сыр,</span></p>
+            <p class="extra legend"><img src="img/mushroom.png" alt="" /><span> - грибы.</span></p>
+            <p class="extra">Но помни - времени на все про все лишь 3 минуты, а у тебя еще 2 дела в списке!</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/level1.js" type="text/javascript"></script>
+
+</body>
+
+</html>

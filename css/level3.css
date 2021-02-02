@@ -1,0 +1,58 @@
+#plate_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#plate {
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+
+#plate2 {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#items .sausage, #items .cheese, #items .mushroom {
+    position: relative;
+    margin: 15px 0;
+}
+
+.pancake {
+    height: 170px;
+    width: 300px;
+    background: url("../img/pancake.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.green {
+    border: green solid 5px;
+}
+
+@media all and (max-width: 700px) {
+    #plate {
+        width: 310px;
+        height: 200px;
+    }
+
+    #plate2 {
+        width: 310px;
+        height: 220px;
+    }
+}

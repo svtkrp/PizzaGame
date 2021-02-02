@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>PizzaHeart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <nav>
+            <ul class="nav">
+                <li><a href="#levels">Список уровней</a></li>
+                <li><button type=button onclick="showInfoAlert()" id="score">Информация</button></li>
+                <li><a href="#instruction">Инструкция</a></li>
+                <li><span id="score_count"></span></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bg_white">
+        <div class="wrapper">
+            <div class="header-top">
+                <div class="logo">
+                    <span class="logo-image"></span><span><a href="theend.html">PizzaGame</a></span>
+                </div>
+                <div class="cart">
+                    <img id="daynight" src="img/day.png" alt="daynight" onclick="dayNight()">
+                    <a class="btn" href="index.html">Сыграть еще раз</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper">
+            <div class="header-bottom">
+                <h2 class="level">Конец игры</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3 id="what"></h3>
+            <p id="about" class="about"></p>
+            <img id="result_pic" src="" alt="illustration" style="display: none">
+            <h3 id="result"></h3>
+            <p class="about" id="result1"></p>
+            <p class="about" id="result2"></p>
+            <p class="about" id="result3"></p>
+            <a id="letsgo" style="display: none" class="btn" href=""></a>
+            <button id="download_button" style="display: none" type=button class="btn" onclick="download(getDownloadInfo(), getFilename(), 'text/plain')">Сохранить эту информацию</button>
+        </div>
+    </div>
+</section>
+
+<section id="levels" class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3>Твой список дел</h3>
+            <p class="extra"><a href="index.html"><strike>Вступление</strike></a></p>
+            <p class="extra"><a href="level1.html"><strike>1) Поймай меня, если осмелишься</strike></a></p>
+            <p class="extra"><a href="level2.html"><strike>2) Колбаса любит счет</strike></a></p>
+            <p class="extra"><a href="level3.html"><strike>3) 33 пиццетты</strike></a></p>
+        </div>
+    </div>
+</section>
+
+<section id="instruction" class="section">
+    <div class="wrapper">
+        <div class="bg_white">
+            <h3>Инструкция</h3>
+            <p class="extra">На этой странице ты можешь увидеть свои результаты или их отсутствие.</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/theend.js" type="text/javascript"></script>
+
+</body>
+
+</html>

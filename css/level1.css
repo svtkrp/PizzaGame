@@ -1,0 +1,17 @@
+.green {
+    border: green 5px solid;
+}
+
+.red {
+    border: red 5px solid;
+}
+
+#field {
+    height: 600px;
+}
+
+@media all and (max-width: 700px) {
+    #field {
+        height: 350px;
+    }
+}
